@@ -6,6 +6,36 @@ This README has been written by chatgpt. Its contents have been validated but no
 This allocator obtains memory from the operating system in **arenas**, divides
 them into blocks, and reuses free blocks for later allocations.
 
+## Build and test on Linux
+
+```sh
+make          # Build both shared libraries and the test executable.
+make check    # Run glibc and all three instrumented allocator strategies.
+make clean    # Remove generated files in build/.
+```
+
+The outputs are `build/liballocator.so`, `build/liballocator_with_stats.so`, and
+`build/test_allocator`. The test executable uses glibc unless a custom library is
+preloaded. For example:
+
+```sh
+LD_PRELOAD="$PWD/build/liballocator_with_stats.so" ALLOC_STRATEGY=best \
+    ./build/test_allocator --require-custom
+```
+
+Both libraries can be used with `LD_PRELOAD`; the instrumented version provides
+the diagnostics required by the custom-only tests. The compiler flags include
+`-fno-builtin` to prevent allocation calls from being optimized away or rewritten
+into recursive calls inside the allocator.
+
+On macOS, build and run the Linux binaries through Docker:
+
+```sh
+docker build -t spp-allocator .
+docker run --rm --network none -v "$PWD:/work" spp-allocator make
+docker run --rm --network none -v "$PWD:/work" spp-allocator make check
+```
+
 ## Data structures
 
 - **Arena list:** a doubly linked list of all currently mapped arenas, including

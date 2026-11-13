@@ -15,6 +15,8 @@ struct allocator_stats {
     size_t searches, search_steps, splits, coalesces;
     /* Cumulative system-call attempts, including failures. */
     size_t mmap_calls, munmap_calls;
+    /* Mean free payload capacity in bytes, sampled on demand; 0.0 if none. */
+    double average_free_block_size;
 };
 
 /* Diagnostics take the allocator mutex and never allocate memory. */
