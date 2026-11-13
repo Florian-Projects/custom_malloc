@@ -89,3 +89,35 @@ leave additional empty arenas mapped.
 One global mutex protects initialization, arena and free lists, block metadata,
 and the spare and cursor pointers. Public allocation functions acquire it;
 internal helpers run while it is held.
+
+## Statistics and diagnostics
+
+Build `allocat_with_stats.c` instead of `allocator.c` to enable statistics and
+diagnostics. The two files are independent versions exporting the same allocation
+functions; compile only one into a given allocator library.
+
+Include `allocator_stats.h` to use the instrumented version's diagnostics:
+
+- `allocator_get_stats(&stats)` copies a consistent snapshot into a
+  `struct allocator_stats`. It returns `0` on success or `-1` for a null pointer.
+- `allocator_validate()` returns `1` when arena/block links, alignment, free-list
+  state, and live-memory accounting are consistent, or `0` otherwise.
+- `allocator_strategy_name()` returns `"first"`, `"best"`, or `"next"`.
+
+Snapshots report current and peak mapped bytes, arena and live-block counts,
+requested bytes, allocated payload capacity, and free-space distribution.
+`capacity_bytes - requested_bytes` measures slack inside live allocations;
+headers are excluded from both values.
+
+Call counters are cumulative and include failures and `free(NULL)`. Internal
+allocation and release during `realloc` do not increment `malloc_calls` or
+`free_calls`. Search, split, merge, and mapping-attempt counters are also
+cumulative. Mapped-byte and arena totals change only after successful system
+calls. Free-block statistics are calculated from the free list for each snapshot.
+`average_free_block_size` is the mean free payload capacity in bytes, including
+the spare's free block and excluding headers. It is a `double` to preserve
+fractional averages, or `0.0` when no free blocks exist. It is calculated in
+`allocator_get_stats` from the same snapshot's free bytes and block count, so
+validation does not need to run first. Rebuild consumers with the updated
+`allocator_stats.h` when using the extended statistics structure.
+All diagnostics use the existing mutex and perform no allocations.
