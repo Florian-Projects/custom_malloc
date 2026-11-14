@@ -1,0 +1,3982 @@
+{
+  "single": [
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2290292,
+        "throughput_calls_per_second": 43662554.818337575,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1120,
+            "peak_rss_kib": 1120,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1168,
+            "peak_rss_kib": 1168,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1168,
+            "peak_rss_kib": 1168,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2766584,
+        "throughput_calls_per_second": 36145658.328104265,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1304,
+            "peak_rss_kib": 1304,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1240,
+            "peak_rss_kib": 1240,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2673708,
+        "throughput_calls_per_second": 37401242.02044501,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1280,
+            "peak_rss_kib": 1280,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1216,
+            "peak_rss_kib": 1216,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 3502916,
+        "throughput_calls_per_second": 28547644.3054872,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1124,
+            "peak_rss_kib": 1124,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1320,
+            "peak_rss_kib": 1320,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1256,
+            "peak_rss_kib": 1256,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2750667,
+        "throughput_calls_per_second": 36354818.66761771,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1300,
+            "peak_rss_kib": 1300,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 107,
+              "free_bytes": 60416,
+              "largest_free_block": 37408,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50405,
+              "splits": 18501,
+              "coalesces": 17898,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 564.6355140186915
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1236,
+            "peak_rss_kib": 1236,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50405,
+              "splits": 18501,
+              "coalesces": 18501,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2601500,
+        "throughput_calls_per_second": 38439361.906592354,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1208,
+            "peak_rss_kib": 1208,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1280,
+            "peak_rss_kib": 1280,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 19,
+              "free_bytes": 66048,
+              "largest_free_block": 61344,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 87512,
+              "splits": 3300,
+              "coalesces": 2785,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 3476.2105263157896
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1216,
+            "peak_rss_kib": 1216,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 87512,
+              "splits": 3300,
+              "coalesces": 3300,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 3051875,
+        "throughput_calls_per_second": 32766741.757116526,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1332,
+            "peak_rss_kib": 1332,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 168,
+              "free_bytes": 56512,
+              "largest_free_block": 11968,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50358,
+              "splits": 33165,
+              "coalesces": 32501,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 336.3809523809524
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 1268,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50358,
+              "splits": 33165,
+              "coalesces": 33165,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 10673459,
+        "throughput_calls_per_second": 9369033.974834213,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1120,
+            "peak_rss_kib": 1120,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 4048,
+            "peak_rss_kib": 4208,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 4020,
+            "peak_rss_kib": 4208,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 13454667,
+        "throughput_calls_per_second": 7432365.2900514,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1136,
+            "peak_rss_kib": 1136,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 5528,
+            "peak_rss_kib": 5620,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1260,
+            "peak_rss_kib": 5620,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 23547917,
+        "throughput_calls_per_second": 4246660.118599875,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1128,
+            "peak_rss_kib": 1128,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 3820,
+            "peak_rss_kib": 4012,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1260,
+            "peak_rss_kib": 4012,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8928959,
+        "throughput_calls_per_second": 11199513.851502733,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1124,
+            "peak_rss_kib": 1124,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 5224,
+            "peak_rss_kib": 5540,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1256,
+            "peak_rss_kib": 5540,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8559375,
+        "throughput_calls_per_second": 11683096.020445418,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 5528,
+            "peak_rss_kib": 5620,
+            "allocator_stats": {
+              "mapped_bytes": 4456448,
+              "peak_mapped_bytes": 4718592,
+              "arenas": 68,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1889280,
+              "free_blocks": 302,
+              "free_bytes": 2513792,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 170407,
+              "splits": 49541,
+              "coalesces": 48809,
+              "mmap_calls": 114,
+              "munmap_calls": 46,
+              "average_free_block_size": 8323.814569536424
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1260,
+            "peak_rss_kib": 5620,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 4718592,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 170407,
+              "splits": 49541,
+              "coalesces": 49541,
+              "mmap_calls": 114,
+              "munmap_calls": 113,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 23166333,
+        "throughput_calls_per_second": 4316608.934180477,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 3828,
+            "peak_rss_kib": 4024,
+            "allocator_stats": {
+              "mapped_bytes": 2686976,
+              "peak_mapped_bytes": 3080192,
+              "arenas": 41,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1893504,
+              "free_blocks": 142,
+              "free_bytes": 751200,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 5257426,
+              "splits": 23266,
+              "coalesces": 22667,
+              "mmap_calls": 93,
+              "munmap_calls": 52,
+              "average_free_block_size": 5290.140845070423
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 4024,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 3080192,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 5257426,
+              "splits": 23266,
+              "coalesces": 23266,
+              "mmap_calls": 93,
+              "munmap_calls": 92,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8930666,
+        "throughput_calls_per_second": 11197373.18582959,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 5236,
+            "peak_rss_kib": 5488,
+            "allocator_stats": {
+              "mapped_bytes": 4128768,
+              "peak_mapped_bytes": 4521984,
+              "arenas": 63,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1889184,
+              "free_blocks": 285,
+              "free_bytes": 2187456,
+              "largest_free_block": 58096,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 190679,
+              "splits": 49737,
+              "coalesces": 49017,
+              "mmap_calls": 150,
+              "munmap_calls": 87,
+              "average_free_block_size": 7675.284210526316
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 5488,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 4521984,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 190679,
+              "splits": 49737,
+              "coalesces": 49737,
+              "mmap_calls": 150,
+              "munmap_calls": 149,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 6528291,
+        "throughput_calls_per_second": 15553228.249169653,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1120,
+            "peak_rss_kib": 1120,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2308,
+            "peak_rss_kib": 2308,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 2280,
+            "peak_rss_kib": 2280,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5437375,
+        "throughput_calls_per_second": 18673716.63716407,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2552,
+            "peak_rss_kib": 2552,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1272,
+            "peak_rss_kib": 2488,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 61680167,
+        "throughput_calls_per_second": 1646169.3432185422,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2452,
+            "peak_rss_kib": 2452,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1236,
+            "peak_rss_kib": 2360,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5718042,
+        "throughput_calls_per_second": 17757127.352334943,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2552,
+            "peak_rss_kib": 2552,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1272,
+            "peak_rss_kib": 2420,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5479375,
+        "throughput_calls_per_second": 18530580.586289495,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1208,
+            "peak_rss_kib": 1208,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2552,
+            "peak_rss_kib": 2552,
+            "allocator_stats": {
+              "mapped_bytes": 1376256,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 21,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 819376,
+              "free_blocks": 646,
+              "free_bytes": 465840,
+              "largest_free_block": 8464,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 161713,
+              "splits": 49100,
+              "coalesces": 47709,
+              "mmap_calls": 21,
+              "munmap_calls": 0,
+              "average_free_block_size": 721.1145510835913
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1272,
+            "peak_rss_kib": 2424,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 161713,
+              "splits": 49100,
+              "coalesces": 49100,
+              "mmap_calls": 21,
+              "munmap_calls": 20,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 61769750,
+        "throughput_calls_per_second": 1643781.9482837473,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2448,
+            "peak_rss_kib": 2448,
+            "allocator_stats": {
+              "mapped_bytes": 1310720,
+              "peak_mapped_bytes": 1310720,
+              "arenas": 20,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 821168,
+              "free_blocks": 605,
+              "free_bytes": 401168,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 28435144,
+              "splits": 37775,
+              "coalesces": 36424,
+              "mmap_calls": 20,
+              "munmap_calls": 0,
+              "average_free_block_size": 663.0876033057851
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1232,
+            "peak_rss_kib": 2360,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1310720,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 28435144,
+              "splits": 37775,
+              "coalesces": 37775,
+              "mmap_calls": 20,
+              "munmap_calls": 19,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5756750,
+        "throughput_calls_per_second": 17637729.621748384,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2548,
+            "peak_rss_kib": 2548,
+            "allocator_stats": {
+              "mapped_bytes": 1376256,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 21,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 819760,
+              "free_blocks": 642,
+              "free_bytes": 465712,
+              "largest_free_block": 7168,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 181900,
+              "splits": 48943,
+              "coalesces": 47556,
+              "mmap_calls": 21,
+              "munmap_calls": 0,
+              "average_free_block_size": 725.4080996884735
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 2424,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 181900,
+              "splits": 48943,
+              "coalesces": 48943,
+              "mmap_calls": 21,
+              "munmap_calls": 20,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 61545500,
+        "throughput_calls_per_second": 1624814.161880235,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1120,
+            "peak_rss_kib": 1120,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 10644,
+            "peak_rss_kib": 10644,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 10604,
+            "peak_rss_kib": 10604,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 37208791,
+        "throughput_calls_per_second": 2687536.9317965745,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1136,
+            "peak_rss_kib": 1136,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 11956,
+            "peak_rss_kib": 11956,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 11892,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 118935334,
+        "throughput_calls_per_second": 840793.0312786611,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1140,
+            "peak_rss_kib": 1140,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 9752,
+            "peak_rss_kib": 9844,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1272,
+            "peak_rss_kib": 9844,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 37274333,
+        "throughput_calls_per_second": 2682811.2524508485,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1136,
+            "peak_rss_kib": 1136,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 11764,
+            "peak_rss_kib": 11764,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 11636,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 37268417,
+        "throughput_calls_per_second": 2683237.1227358542,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1200,
+            "peak_rss_kib": 1200,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 11952,
+            "peak_rss_kib": 11952,
+            "allocator_stats": {
+              "mapped_bytes": 11010048,
+              "peak_mapped_bytes": 11075584,
+              "arenas": 168,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6595360,
+              "free_blocks": 662,
+              "free_bytes": 4314336,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 38702,
+              "search_steps": 350364,
+              "splits": 79052,
+              "coalesces": 77736,
+              "mmap_calls": 169,
+              "munmap_calls": 1,
+              "average_free_block_size": 6517.123867069487
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1264,
+            "peak_rss_kib": 11952,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 11075584,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 38702,
+              "search_steps": 350364,
+              "splits": 79052,
+              "coalesces": 79052,
+              "mmap_calls": 169,
+              "munmap_calls": 168,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 118886291,
+        "throughput_calls_per_second": 841139.8754125487,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1208,
+            "peak_rss_kib": 1208,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 9752,
+            "peak_rss_kib": 9848,
+            "allocator_stats": {
+              "mapped_bytes": 8781824,
+              "peak_mapped_bytes": 9043968,
+              "arenas": 134,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6598992,
+              "free_blocks": 450,
+              "free_bytes": 2097136,
+              "largest_free_block": 46160,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 44948,
+              "search_steps": 16903723,
+              "splits": 57796,
+              "coalesces": 56658,
+              "mmap_calls": 153,
+              "munmap_calls": 19,
+              "average_free_block_size": 4660.302222222223
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1272,
+            "peak_rss_kib": 9848,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 9043968,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 44948,
+              "search_steps": 16903723,
+              "splits": 57796,
+              "coalesces": 57796,
+              "mmap_calls": 153,
+              "munmap_calls": 152,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 1,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 37494333,
+        "throughput_calls_per_second": 2667069.714241883,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204,
+            "peak_rss_kib": 1204,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 11764,
+            "peak_rss_kib": 11764,
+            "allocator_stats": {
+              "mapped_bytes": 10813440,
+              "peak_mapped_bytes": 10878976,
+              "arenas": 165,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6595024,
+              "free_blocks": 648,
+              "free_bytes": 4119056,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 39324,
+              "search_steps": 396837,
+              "splits": 79000,
+              "coalesces": 77695,
+              "mmap_calls": 166,
+              "munmap_calls": 1,
+              "average_free_block_size": 6356.567901234568
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1268,
+            "peak_rss_kib": 11640,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 10878976,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 39324,
+              "search_steps": 396837,
+              "splits": 79000,
+              "coalesces": 79000,
+              "mmap_calls": 166,
+              "munmap_calls": 165,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    }
+  ],
+  "average": [
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2094487.7,
+        "throughput_calls_per_second": 47747371.49963663,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1116.4,
+            "peak_rss_kib": 1116.8,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1164.8,
+            "peak_rss_kib": 1164.8,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1164.8,
+            "peak_rss_kib": 1164.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2690695.7,
+        "throughput_calls_per_second": 37195334.10666578,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1134.4,
+            "peak_rss_kib": 1134.4,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1298.4,
+            "peak_rss_kib": 1298.4,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1234.4,
+            "peak_rss_kib": 1234.4,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2542358.3,
+        "throughput_calls_per_second": 39349188.23115206,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1138.8,
+            "peak_rss_kib": 1138.8,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1278.8,
+            "peak_rss_kib": 1278.8,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1214.8,
+            "peak_rss_kib": 1214.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2908412.6,
+        "throughput_calls_per_second": 34384842.33656567,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1129.6,
+            "peak_rss_kib": 1129.6,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 1325.6,
+            "peak_rss_kib": 1325.6,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1261.6,
+            "peak_rss_kib": 1261.6,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2679924.8,
+        "throughput_calls_per_second": 37318789.12188285,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1204.8,
+            "peak_rss_kib": 1204.8,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1300.8,
+            "peak_rss_kib": 1300.8,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 107,
+              "free_bytes": 60416,
+              "largest_free_block": 37408,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50405,
+              "splits": 18501,
+              "coalesces": 17898,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 564.6355140186915
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1236.8,
+            "peak_rss_kib": 1236.8,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50405,
+              "splits": 18501,
+              "coalesces": 18501,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2585479.1,
+        "throughput_calls_per_second": 38680015.691843964,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1205.2,
+            "peak_rss_kib": 1205.2,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1277.2,
+            "peak_rss_kib": 1277.2,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 19,
+              "free_bytes": 66048,
+              "largest_free_block": 61344,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 87512,
+              "splits": 3300,
+              "coalesces": 2785,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 3476.2105263157896
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1213.2,
+            "peak_rss_kib": 1213.2,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 87512,
+              "splits": 3300,
+              "coalesces": 3300,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "uniform",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 2965854.3,
+        "throughput_calls_per_second": 33720798.10281899,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 31872,
+        "peak_live_requested_bytes": 36032,
+        "checksum": 13362533706660803315,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1202,
+            "peak_rss_kib": 1202,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 1330,
+            "peak_rss_kib": 1330,
+            "allocator_stats": {
+              "mapped_bytes": 131072,
+              "peak_mapped_bytes": 131072,
+              "arenas": 2,
+              "live_blocks": 498,
+              "requested_bytes": 31872,
+              "capacity_bytes": 31872,
+              "free_blocks": 168,
+              "free_bytes": 56512,
+              "largest_free_block": 11968,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50358,
+              "splits": 33165,
+              "coalesces": 32501,
+              "mmap_calls": 2,
+              "munmap_calls": 0,
+              "average_free_block_size": 336.3809523809524
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1266,
+            "peak_rss_kib": 1266,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 131072,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 50358,
+              "splits": 33165,
+              "coalesces": 33165,
+              "mmap_calls": 2,
+              "munmap_calls": 1,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8426020.9,
+        "throughput_calls_per_second": 11878841.67593908,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1116.8,
+            "peak_rss_kib": 1116.8,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 4044.8,
+            "peak_rss_kib": 4183.6,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 4016.8,
+            "peak_rss_kib": 4180.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8582845.8,
+        "throughput_calls_per_second": 11686482.25988913,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1133.6,
+            "peak_rss_kib": 1133.6,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 5525.6,
+            "peak_rss_kib": 5634,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1257.6,
+            "peak_rss_kib": 5630,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 23596366.8,
+        "throughput_calls_per_second": 4238971.499308093,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1138.4,
+            "peak_rss_kib": 1138.4,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 3830.4,
+            "peak_rss_kib": 3967.2,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1270.4,
+            "peak_rss_kib": 3967.2,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8779329.2,
+        "throughput_calls_per_second": 11390936.064792205,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1136.4,
+            "peak_rss_kib": 1136.4,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 5236.4,
+            "peak_rss_kib": 5525.2,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1268.4,
+            "peak_rss_kib": 5525.2,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8300700,
+        "throughput_calls_per_second": 12050152.1225409,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1206.8,
+            "peak_rss_kib": 1206.8,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 5530.8,
+            "peak_rss_kib": 5652,
+            "allocator_stats": {
+              "mapped_bytes": 4456448,
+              "peak_mapped_bytes": 4718592,
+              "arenas": 68,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1889280,
+              "free_blocks": 302,
+              "free_bytes": 2513792,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 170407,
+              "splits": 49541,
+              "coalesces": 48809,
+              "mmap_calls": 114,
+              "munmap_calls": 46,
+              "average_free_block_size": 8323.814569536424
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1262.8,
+            "peak_rss_kib": 5648.8,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 4718592,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 170407,
+              "splits": 49541,
+              "coalesces": 49541,
+              "mmap_calls": 114,
+              "munmap_calls": 113,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 23432591.7,
+        "throughput_calls_per_second": 4268486.320200921,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1202.8,
+            "peak_rss_kib": 1202.8,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 3826.8,
+            "peak_rss_kib": 3987.2,
+            "allocator_stats": {
+              "mapped_bytes": 2686976,
+              "peak_mapped_bytes": 3080192,
+              "arenas": 41,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1893504,
+              "free_blocks": 142,
+              "free_bytes": 751200,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 5257426,
+              "splits": 23266,
+              "coalesces": 22667,
+              "mmap_calls": 93,
+              "munmap_calls": 52,
+              "average_free_block_size": 5290.140845070423
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1266.8,
+            "peak_rss_kib": 3987.2,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 3080192,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 5257426,
+              "splits": 23266,
+              "coalesces": 23266,
+              "mmap_calls": 93,
+              "munmap_calls": 92,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "mixed",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 8893300.1,
+        "throughput_calls_per_second": 11246348.153666157,
+        "operations": {
+          "total": 100000,
+          "malloc": 37461,
+          "calloc": 12788,
+          "realloc": 0,
+          "free": 49751
+        },
+        "live_requested_bytes": 1885795,
+        "peak_live_requested_bytes": 2359434,
+        "checksum": 15733329187551637600,
+        "cleanup_free_calls": 498,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1203.2,
+            "peak_rss_kib": 1203.2,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 5235.2,
+            "peak_rss_kib": 5505.6,
+            "allocator_stats": {
+              "mapped_bytes": 4128768,
+              "peak_mapped_bytes": 4521984,
+              "arenas": 63,
+              "live_blocks": 498,
+              "requested_bytes": 1885795,
+              "capacity_bytes": 1889184,
+              "free_blocks": 285,
+              "free_bytes": 2187456,
+              "largest_free_block": 58096,
+              "malloc_calls": 37461,
+              "free_calls": 49751,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 190679,
+              "splits": 49737,
+              "coalesces": 49017,
+              "mmap_calls": 150,
+              "munmap_calls": 87,
+              "average_free_block_size": 7675.284210526316
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1267.2,
+            "peak_rss_kib": 5505.6,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 4521984,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 37461,
+              "free_calls": 50249,
+              "calloc_calls": 12788,
+              "realloc_calls": 0,
+              "searches": 50249,
+              "search_steps": 190679,
+              "splits": 49737,
+              "coalesces": 49737,
+              "mmap_calls": 150,
+              "munmap_calls": 149,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 6531562.5,
+        "throughput_calls_per_second": 15546539.737010116,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1114.4,
+            "peak_rss_kib": 1115.2,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2303.2,
+            "peak_rss_kib": 2303.2,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 2275.2,
+            "peak_rss_kib": 2278.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5445412.5,
+        "throughput_calls_per_second": 18646771.61567443,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1137.6,
+            "peak_rss_kib": 1137.6,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2549.6,
+            "peak_rss_kib": 2549.6,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1269.6,
+            "peak_rss_kib": 2438.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 62102250,
+        "throughput_calls_per_second": 1635027.167730554,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1135.6,
+            "peak_rss_kib": 1135.6,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2447.6,
+            "peak_rss_kib": 2447.6,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1231.6,
+            "peak_rss_kib": 2322.4,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5730829.1,
+        "throughput_calls_per_second": 17718624.257973876,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1137.6,
+            "peak_rss_kib": 1137.6,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 2549.6,
+            "peak_rss_kib": 2549.6,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1269.6,
+            "peak_rss_kib": 2452.4,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5494287.5,
+        "throughput_calls_per_second": 18481633.25144438,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1205.2,
+            "peak_rss_kib": 1205.2,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2549.2,
+            "peak_rss_kib": 2549.2,
+            "allocator_stats": {
+              "mapped_bytes": 1376256,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 21,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 819376,
+              "free_blocks": 646,
+              "free_bytes": 465840,
+              "largest_free_block": 8464,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 161713,
+              "splits": 49100,
+              "coalesces": 47709,
+              "mmap_calls": 21,
+              "munmap_calls": 0,
+              "average_free_block_size": 721.1145510835913
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1269.2,
+            "peak_rss_kib": 2453.6,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 161713,
+              "splits": 49100,
+              "coalesces": 49100,
+              "mmap_calls": 21,
+              "munmap_calls": 20,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 61637337.4,
+        "throughput_calls_per_second": 1647380.3683947523,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1203.6,
+            "peak_rss_kib": 1203.6,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2447.6,
+            "peak_rss_kib": 2447.6,
+            "allocator_stats": {
+              "mapped_bytes": 1310720,
+              "peak_mapped_bytes": 1310720,
+              "arenas": 20,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 821168,
+              "free_blocks": 605,
+              "free_bytes": 401168,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 28435144,
+              "splits": 37775,
+              "coalesces": 36424,
+              "mmap_calls": 20,
+              "munmap_calls": 0,
+              "average_free_block_size": 663.0876033057851
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1231.6,
+            "peak_rss_kib": 2337.2,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1310720,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 28435144,
+              "splits": 37775,
+              "coalesces": 37775,
+              "mmap_calls": 20,
+              "munmap_calls": 19,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "fragmented",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 5756203.9,
+        "throughput_calls_per_second": 17639669.031643588,
+        "operations": {
+          "total": 101536,
+          "malloc": 38510,
+          "calloc": 12641,
+          "realloc": 0,
+          "free": 50385
+        },
+        "live_requested_bytes": 817291,
+        "peak_live_requested_bytes": 903748,
+        "checksum": 9301141410596246320,
+        "cleanup_free_calls": 766,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1206.4,
+            "peak_rss_kib": 1206.4,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 2550.4,
+            "peak_rss_kib": 2550.4,
+            "allocator_stats": {
+              "mapped_bytes": 1376256,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 21,
+              "live_blocks": 766,
+              "requested_bytes": 817291,
+              "capacity_bytes": 819760,
+              "free_blocks": 642,
+              "free_bytes": 465712,
+              "largest_free_block": 7168,
+              "malloc_calls": 38510,
+              "free_calls": 50385,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 181900,
+              "splits": 48943,
+              "coalesces": 47556,
+              "mmap_calls": 21,
+              "munmap_calls": 0,
+              "average_free_block_size": 725.4080996884735
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1270.4,
+            "peak_rss_kib": 2442,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 1376256,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 38510,
+              "free_calls": 51151,
+              "calloc_calls": 12641,
+              "realloc_calls": 0,
+              "searches": 51151,
+              "search_steps": 181900,
+              "splits": 48943,
+              "coalesces": 48943,
+              "mmap_calls": 21,
+              "munmap_calls": 20,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "system",
+        "variant": "glibc",
+        "allocator_library": "/lib/aarch64-linux-gnu/libc.so.6",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 47111604.2,
+        "throughput_calls_per_second": 2123236.4104983336,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1116,
+            "peak_rss_kib": 1116,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 10640,
+            "peak_rss_kib": 10640,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 10600,
+            "peak_rss_kib": 10602.8,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "first",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 36277329.2,
+        "throughput_calls_per_second": 2757413.423792225,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1138,
+            "peak_rss_kib": 1138,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 11958,
+            "peak_rss_kib": 11958.4,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1270,
+            "peak_rss_kib": 11925.6,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "best",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 117546479.2,
+        "throughput_calls_per_second": 850872.3758764665,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1134,
+            "peak_rss_kib": 1134,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 9746,
+            "peak_rss_kib": 9872,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1266,
+            "peak_rss_kib": 9872,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "next",
+        "variant": "plain",
+        "allocator_library": "/work/build/liballocator.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 38869770.9,
+        "throughput_calls_per_second": 2602725.2272258042,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1133.2,
+            "peak_rss_kib": 1133.2,
+            "allocator_stats": null
+          },
+          "before_cleanup": {
+            "rss_kib": 11761.2,
+            "peak_rss_kib": 11761.2,
+            "allocator_stats": null
+          },
+          "after_cleanup": {
+            "rss_kib": 1265.2,
+            "peak_rss_kib": 11652,
+            "allocator_stats": null
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "first",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 36091620.9,
+        "throughput_calls_per_second": 2771621.4548401595,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1205.2,
+            "peak_rss_kib": 1205.2,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 11957.2,
+            "peak_rss_kib": 11958,
+            "allocator_stats": {
+              "mapped_bytes": 11010048,
+              "peak_mapped_bytes": 11075584,
+              "arenas": 168,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6595360,
+              "free_blocks": 662,
+              "free_bytes": 4314336,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 38702,
+              "search_steps": 350364,
+              "splits": 79052,
+              "coalesces": 77736,
+              "mmap_calls": 169,
+              "munmap_calls": 1,
+              "average_free_block_size": 6517.123867069487
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1269.2,
+            "peak_rss_kib": 11927.2,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 11075584,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 38702,
+              "search_steps": 350364,
+              "splits": 79052,
+              "coalesces": 79052,
+              "mmap_calls": 169,
+              "munmap_calls": 168,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "best",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 117433316.8,
+        "throughput_calls_per_second": 851725.8452198053,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1203.2,
+            "peak_rss_kib": 1203.2,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 9747.2,
+            "peak_rss_kib": 9863.2,
+            "allocator_stats": {
+              "mapped_bytes": 8781824,
+              "peak_mapped_bytes": 9043968,
+              "arenas": 134,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6598992,
+              "free_blocks": 450,
+              "free_bytes": 2097136,
+              "largest_free_block": 46160,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 44948,
+              "search_steps": 16903723,
+              "splits": 57796,
+              "coalesces": 56658,
+              "mmap_calls": 153,
+              "munmap_calls": 19,
+              "average_free_block_size": 4660.302222222223
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1267.2,
+            "peak_rss_kib": 9863.2,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 9043968,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 44948,
+              "search_steps": 16903723,
+              "splits": 57796,
+              "coalesces": 57796,
+              "mmap_calls": 153,
+              "munmap_calls": 152,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    },
+    {
+      "repetitions": 10,
+      "result": {
+        "schema_version": 1,
+        "workload": "resize",
+        "allocator": "next",
+        "variant": "stats",
+        "allocator_library": "/work/build/liballocator_with_stats.so",
+        "seed": 12345,
+        "steps": 100000,
+        "size_scale": 1,
+        "slots": 1024,
+        "elapsed_ns": 36868666.9,
+        "throughput_calls_per_second": 2712454.3638500706,
+        "operations": {
+          "total": 100000,
+          "malloc": 0,
+          "calloc": 0,
+          "realloc": 79985,
+          "free": 20015
+        },
+        "live_requested_bytes": 6588818,
+        "peak_live_requested_bytes": 7264729,
+        "checksum": 13698073334637253551,
+        "cleanup_free_calls": 822,
+        "checkpoints": {
+          "initial": {
+            "rss_kib": 1202.8,
+            "peak_rss_kib": 1202.8,
+            "allocator_stats": {
+              "mapped_bytes": 0,
+              "peak_mapped_bytes": 0,
+              "arenas": 0,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 0,
+              "free_bytes": 0,
+              "largest_free_block": 0,
+              "malloc_calls": 0,
+              "free_calls": 0,
+              "calloc_calls": 0,
+              "realloc_calls": 0,
+              "searches": 0,
+              "search_steps": 0,
+              "splits": 0,
+              "coalesces": 0,
+              "mmap_calls": 0,
+              "munmap_calls": 0,
+              "average_free_block_size": 0
+            }
+          },
+          "before_cleanup": {
+            "rss_kib": 11762.8,
+            "peak_rss_kib": 11762.8,
+            "allocator_stats": {
+              "mapped_bytes": 10813440,
+              "peak_mapped_bytes": 10878976,
+              "arenas": 165,
+              "live_blocks": 822,
+              "requested_bytes": 6588818,
+              "capacity_bytes": 6595024,
+              "free_blocks": 648,
+              "free_bytes": 4119056,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20015,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 39324,
+              "search_steps": 396837,
+              "splits": 79000,
+              "coalesces": 77695,
+              "mmap_calls": 166,
+              "munmap_calls": 1,
+              "average_free_block_size": 6356.567901234568
+            }
+          },
+          "after_cleanup": {
+            "rss_kib": 1266.8,
+            "peak_rss_kib": 11668.4,
+            "allocator_stats": {
+              "mapped_bytes": 65536,
+              "peak_mapped_bytes": 10878976,
+              "arenas": 1,
+              "live_blocks": 0,
+              "requested_bytes": 0,
+              "capacity_bytes": 0,
+              "free_blocks": 1,
+              "free_bytes": 65440,
+              "largest_free_block": 65440,
+              "malloc_calls": 0,
+              "free_calls": 20837,
+              "calloc_calls": 0,
+              "realloc_calls": 79985,
+              "searches": 39324,
+              "search_steps": 396837,
+              "splits": 79000,
+              "coalesces": 79000,
+              "mmap_calls": 166,
+              "munmap_calls": 165,
+              "average_free_block_size": 65440
+            }
+          }
+        }
+      }
+    }
+  ]
+}

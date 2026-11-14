@@ -116,6 +116,16 @@ custom library runs with `first`, `best`, and `next`: 28 configurations in total
 10 times in fresh processes with identical parameters. The default, `both`,
 collects an independent single run plus 10 runs per configuration (308 processes).
 
+`--mode average-seeds` averages 10 runs with different seeds. The first uses
+`--seed`; each subsequent seed is derived from the previous one using xorshift32
+(shifts 13, 17, and 5, with 32-bit unsigned arithmetic). Every configuration uses
+the same sequence of 10 nonzero seeds, so the entire collection is repeatable.
+Use `--mode all` to collect all three modes (588 processes).
+
+```sh
+python3 benchmark.py --mode average-seeds --seed 12345 --steps 100000
+```
+
 Results go to `benchmark_results/benchmarks.json`; use `--output PATH` to change the location.
 The JSON has `single` and/or `average` lists. Each entry contains `repetitions`
 and a `result` with the C benchmark's fields. Average results contain arithmetic
@@ -123,6 +133,13 @@ means for elapsed time, throughput, and all numeric checkpoint measurements.
 Throughput is the mean of the reported rates. Unavailable measurements stay
 `null`; identifiers, deterministic workload counts, and checksums stay exact.
 Individual repetitions are not saved in average mode.
+
+For `average-seeds`, JSON contains an `average-seeds` list. Each entry records
+the exact `seeds` and corresponding `checksums` lists alongside `repetitions`
+and `result`. The result averages timing, checkpoints, operation counts, live
+and peak requested bytes, and cleanup counts. It omits the singular `seed` and
+`checksum` fields, since neither has a meaningful average. All other identifying
+fields remain unchanged. Per-run measurements are not saved.
 
 Use `--size-scale N` with either `benchmark.py` or `build/benchmark` to multiply
 every allocation size by a positive integer. The default is `1`, preserving the
@@ -140,8 +157,9 @@ rejects scales that could overflow request sizes or total live-byte accounting
 before starting the workload. Larger scales increase memory usage and payload
 writing time; the slot count remains 1,024.
 
-Checksums must match across repetitions and allocator configurations for the
-same workload. A mismatch or failed process stops the script with a nonzero exit
+Checksums must match across repetitions and allocator configurations with the
+same workload, seed, step count, and size scale. Different seeds are allowed to
+produce different checksums. A mismatch or failed process stops the script with a nonzero exit
 status. The output file is written only after all runs succeed; a previous file
 is left untouched if collection fails. No charts or report are generated.
 
