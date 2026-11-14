@@ -4,9 +4,9 @@ CFLAGS ?= -std=c11 -O2 -g -Wall -Wextra -Wpedantic -Werror -Wshadow -fno-builtin
 LDFLAGS ?=
 LDLIBS ?= -pthread
 
-.PHONY: all check clean
+.PHONY: all check check-benchmark clean
 
-all: build/liballocator.so build/liballocator_with_stats.so build/test_allocator
+all: build/liballocator.so build/liballocator_with_stats.so build/test_allocator build/benchmark
 
 build:
 	mkdir -p $@
@@ -21,6 +21,12 @@ build/liballocator_with_stats.so: allocat_with_stats.c allocator.h allocator_sta
 # Weak diagnostic symbols let this executable also run with glibc alone.
 build/test_allocator: test_allocator.c allocator_stats.h | build
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) $< -o $@ $(LDLIBS)
+
+build/benchmark: benchmark.c allocator_stats.h | build
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) $< -o $@ $(LDLIBS) -ldl
+
+check-benchmark: all
+	python3 tests/test_benchmark.py
 
 check: all
 	env -u LD_PRELOAD -u ALLOC_STRATEGY ./build/test_allocator --system
