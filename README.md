@@ -249,7 +249,7 @@ internal helpers run while it is held.
 
 ## Statistics and diagnostics
 
-Build `allocat_with_stats.c` instead of `allocator.c` to enable statistics and
+Build `allocator_with_stats.c` instead of `allocator.c` to enable statistics and
 diagnostics. The two files are independent versions exporting the same allocation
 functions; compile only one into a given allocator library.
 

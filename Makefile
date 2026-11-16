@@ -15,7 +15,7 @@ build:
 build/liballocator.so: allocator.c allocator.h | build
 	$(CC) $(CPPFLAGS) $(CFLAGS) -fPIC -fvisibility=hidden -shared $(LDFLAGS) $< -o $@ $(LDLIBS)
 
-build/liballocator_with_stats.so: allocat_with_stats.c allocator.h allocator_stats.h | build
+build/liballocator_with_stats.so: allocator_with_stats.c allocator.h allocator_stats.h | build
 	$(CC) $(CPPFLAGS) $(CFLAGS) -fPIC -fvisibility=hidden -shared $(LDFLAGS) $< -o $@ $(LDLIBS)
 
 # Weak diagnostic symbols let this executable also run with glibc alone.
